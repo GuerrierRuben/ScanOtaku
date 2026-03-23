@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,800&family=Poppins:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Manga Details - ScanOtaku</title>
+    <title>Détails du Manga - ScanOtaku</title>
 </head>
 <body>
     <header>
@@ -18,13 +18,13 @@
             <div class="navbar">
                 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="categorie.html">Categories</a>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="categorie.html">Catégories</a>
                         <ul class="dropdown">
                             <li><a href="categorie.html">Action</a></li>
                             <li><a href="categorie.html">Sport</a></li>
-                            <li><a href="categorie.html">Adventure</a></li>
+                            <li><a href="categorie.html">Aventure</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -37,18 +37,18 @@
         <div class="container">
             <div class="details-wrapper">
                 <div class="manga-image">
-                    <img src="images/top manga/45a3222a-cad6-4c86-a3e8-ad057133c575.jpeg" alt="Berserk" id="manga-cover">
+                    <img src="" alt="Manga Cover" id="manga-cover">
                 </div>
                 <div class="manga-info">
-                    <h1 id="manga-title">BERSEK</h1>
+                    <h1 id="manga-title">Chargement...</h1>
                     <div class="manga-metadata">
-                        <span><i class='bx bxs-star'></i> 4.9</span>
-                        <span><i class='bx bxs-category'></i> Action, Seinen, Dark Fantasy</span>
-                        <span><i class='bx bxs-user'></i> Kentaro Miura</span>
+                        <span><i class='bx bxs-star'></i> <span id="manga-rating">4.8</span></span>
+                        <span><i class='bx bxs-category'></i> <span id="manga-category">Seinen, Action</span></span>
+                        <span><i class='bx bxs-user'></i> <span id="manga-author">Auteur Inconnu</span></span>
                     </div>
                     <h3>Synopsis</h3>
                     <p id="manga-description">
-                        Guts, a former mercenary now known as the "Black Swordsman," is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person sacrifices everything he's ever known for his own selfish desires. Now, Guts is marked for death and hunted by demons, but he will not stop until he has exacted his revenge.
+                        Désolé, aucune description n'est disponible pour ce manga pour le moment.
                     </p>
                     <div class="details-buttons">
                         <a href="construction.html" class="btn">Commencer à lire</a>
@@ -59,7 +59,32 @@
         </div>
     </section>
 
-    <div class="copyright"> © <span>OTAKU</span> All right reserved</div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="Logo">
+                <p>ScanOtaku - Votre source de mangas en français. Lisez les derniers chapitres de vos séries préférées en haute qualité.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="categorie.html">Catégories</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-discord'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"> © <span>OTAKU</span> Tous droits réservés</div>
+    </footer>
 
     <script>
         function toggleMenu() {
@@ -67,10 +92,14 @@
             navbar.classList.toggle('active');
         }
 
-        // Quick script to handle dynamic content if needed, otherwise it's just a template
+        // Logic to handle dynamic content from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const title = urlParams.get('title');
         const img = urlParams.get('img');
+        const desc = urlParams.get('desc');
+        const author = urlParams.get('author');
+        const cat = urlParams.get('cat');
+        const rating = urlParams.get('rating');
         
         if (title) {
             document.getElementById('manga-title').innerText = title;
@@ -78,6 +107,19 @@
         }
         if (img) {
             document.getElementById('manga-cover').src = img;
+            document.getElementById('manga-cover').alt = title || "Manga Cover";
+        }
+        if (desc) {
+            document.getElementById('manga-description').innerText = desc;
+        }
+        if (author) {
+            document.getElementById('manga-author').innerText = author;
+        }
+        if (cat) {
+            document.getElementById('manga-category').innerText = cat;
+        }
+        if (rating) {
+            document.getElementById('manga-rating').innerText = rating;
         }
     </script>
 </body>

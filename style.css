@@ -166,19 +166,32 @@ ul li:hover ul.dropdown{
 }
 .btn{
     display: inline-block;
-    padding-top: 200px;
     padding: 14px 40px;
     border-radius: 0.5rem;
     font-size: 15px;
-    font-weight: 500;
-    background: #3B065E;
-    border: 1px solid #3B065E;
+    font-weight: 600;
+    background: linear-gradient(to right, #ff4d4d, #ff8080);
+    border: none;
+    color: white !important;
     transition: all .40s ease;
     margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
 }
 .btn:hover{
-    transform: scale(1.01) translateY(-5px);
-    background: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 77, 77, 0.4);
+    filter: brightness(1.1);
+}
+.btn-alt {
+    background: transparent !important;
+    border: 2px solid #ff4d4d !important;
+    color: #ff4d4d !important;
+    box-shadow: none !important;
+}
+.btn-alt:hover {
+    background: #ff4d4d !important;
+    color: white !important;
 }
 .text-top{
     text-align: left;
@@ -450,6 +463,25 @@ ul li:hover ul.dropdown{
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #111;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .text-blog span {
     color: #ff4d4d;
