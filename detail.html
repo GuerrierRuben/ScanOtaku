@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Détails du Manga - ScanOtaku</title>
+    <title>Details du Manga - ScanOtaku</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <a href="index.html" class="brand">
+                <div class="logo">
+                    <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="ScanOtaku">
+                </div>
+                <div class="brand-copy">
+                    <strong>ScanOtaku</strong>
+                    <span>Lecture manga premium</span>
+                </div>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class='bx bx-menu'></i></div>
             <div class="navbar">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="categorie.html">Catégories</a>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a>
                         <ul class="dropdown">
                             <li><a href="categorie.html">Action</a></li>
                             <li><a href="categorie.html">Sport</a></li>
@@ -29,7 +37,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="logo" id="logo2"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
+            <a href="categorie.html" class="nav-cta">Explorer</a>
         </nav>
     </header>
 
@@ -40,21 +48,109 @@
                     <img src="" alt="Manga Cover" id="manga-cover">
                 </div>
                 <div class="manga-info">
+                    <div class="detail-kicker">
+                        <span id="manga-status">En cours</span>
+                        <span><i class='bx bx-time-five'></i> Mise a jour recente</span>
+                    </div>
                     <h1 id="manga-title">Chargement...</h1>
                     <div class="manga-metadata">
                         <span><i class='bx bxs-star'></i> <span id="manga-rating">4.8</span></span>
-                        <span><i class='bx bxs-category'></i> <span id="manga-category">Seinen, Action</span></span>
-                        <span><i class='bx bxs-user'></i> <span id="manga-author">Auteur Inconnu</span></span>
+                        <span><i class='bx bx-layer'></i> <span id="manga-category">Seinen, Action</span></span>
+                        <span><i class='bx bxs-user'></i> <span id="manga-author">Auteur inconnu</span></span>
+                    </div>
+                    <div class="detail-highlights">
+                        <div class="highlight-card">
+                            <strong id="manga-year">2024</strong>
+                            <span>Lancement</span>
+                        </div>
+                        <div class="highlight-card">
+                            <strong id="manga-chapters">120+</strong>
+                            <span>Chapitres</span>
+                        </div>
+                        <div class="highlight-card">
+                            <strong id="manga-audience">16+</strong>
+                            <span>Public</span>
+                        </div>
                     </div>
                     <h3>Synopsis</h3>
                     <p id="manga-description">
-                        Désolé, aucune description n'est disponible pour ce manga pour le moment.
+                        Desole, aucune description n'est disponible pour ce manga pour le moment.
                     </p>
+                    <div class="detail-summary-box">
+                        <div>
+                            <span class="summary-label">Univers</span>
+                            <p id="manga-universe">Un monde intense, riche en combats, rivalites et progression constante.</p>
+                        </div>
+                        <div>
+                            <span class="summary-label">Ambiance</span>
+                            <p id="manga-vibe">Rythme eleve, enjeux forts et scenes marquantes du debut a la fin.</p>
+                        </div>
+                    </div>
+                    <div class="detail-tags" id="manga-tags"></div>
                     <div class="details-buttons">
-                        <a href="construction.html" class="btn">Commencer à lire</a>
+                        <a href="construction.html" class="btn">Commencer a lire</a>
                         <a href="#" class="btn btn-alt">Ajouter aux favoris</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="detail-content-grid">
+                <div class="detail-panel">
+                    <div class="panel-heading">
+                        <span class="panel-badge">Pourquoi le lire</span>
+                        <h2>Ce manga a tout pour accrocher rapidement</h2>
+                    </div>
+                    <div class="feature-list">
+                        <article class="feature-item">
+                            <i class='bx bx-bolt-circle'></i>
+                            <div>
+                                <h3>Montee en puissance</h3>
+                                <p id="feature-power">Une progression visible, satisfaisante et pleine de moments forts.</p>
+                            </div>
+                        </article>
+                        <article class="feature-item">
+                            <i class='bx bx-mask'></i>
+                            <div>
+                                <h3>Personnages memorables</h3>
+                                <p id="feature-cast">Des rivalites, alliances et personnalites qui rendent chaque arc plus fort.</p>
+                            </div>
+                        </article>
+                        <article class="feature-item">
+                            <i class='bx bx-movie-play'></i>
+                            <div>
+                                <h3>Immersion constante</h3>
+                                <p id="feature-experience">Un univers lisible, des enjeux clairs et une tension qui monte vite.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="detail-side-column">
+                    <div class="detail-panel compact">
+                        <div class="panel-heading">
+                            <span class="panel-badge">Fiche rapide</span>
+                            <h2>Infos essentielles</h2>
+                        </div>
+                        <div class="quick-facts">
+                            <div><span>Theme</span><strong id="manga-theme">Quete / action</strong></div>
+                            <div><span>Rythme</span><strong id="manga-pace">Dynamique</strong></div>
+                            <div><span>Lecture</span><strong id="manga-reading-time">5 min / chapitre</strong></div>
+                            <div><span>Ideal si vous aimez</span><strong id="manga-similar">Les series a forte intensite</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="detail-panel compact">
+                        <div class="panel-heading">
+                            <span class="panel-badge">Points forts</span>
+                            <h2>A retenir</h2>
+                        </div>
+                        <ul class="detail-bullets" id="manga-bullets">
+                            <li>Des combats marquants et faciles a suivre.</li>
+                            <li>Une direction artistique forte.</li>
+                            <li>Des personnages secondaires utiles a l'histoire.</li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -63,18 +159,33 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="Logo">
-                <p>ScanOtaku - Votre source de mangas en français. Lisez les derniers chapitres de vos séries préférées en haute qualité.</p>
+                <p>ScanOtaku vous aide a decouvrir, suivre et lire vos mangas preferes avec une interface plus claire et plus immersive.</p>
+                <div class="footer-pills">
+                    <span>Action</span>
+                    <span>Fantasy</span>
+                    <span>Shonen</span>
+                </div>
             </div>
             <div class="footer-links">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="categorie.html">Catégories</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a></li>
+                    <li><a href="detail.html">Page detail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Decouvrir</h3>
+                <ul>
+                    <li><a href="categorie.html#action">Top action</a></li>
+                    <li><a href="categorie.html#sport">Univers sport</a></li>
+                    <li><a href="categorie.html#aventure">Grandes aventures</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <h3>Suivez-nous</h3>
+                <h3>Communaute</h3>
+                <p>Restez connecte pour les sorties, les recommandations et les series qui montent.</p>
                 <div class="social-icons">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -83,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"> © <span>OTAKU</span> Tous droits réservés</div>
+        <div class="copyright">&copy; <span>ScanOtaku</span> Tous droits reserves</div>
     </footer>
 
     <script>
@@ -92,7 +203,6 @@
             navbar.classList.toggle('active');
         }
 
-        // Logic to handle dynamic content from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const title = urlParams.get('title');
         const img = urlParams.get('img');
@@ -100,7 +210,105 @@
         const author = urlParams.get('author');
         const cat = urlParams.get('cat');
         const rating = urlParams.get('rating');
-        
+
+        const mangaProfiles = {
+            "BERSEK": {
+                year: "1989",
+                chapters: "370+",
+                audience: "18+",
+                status: "Culte",
+                universe: "Dark fantasy brutal, politique, mystique et profondement tragique.",
+                vibe: "Intense, mature, violent et emotionnel avec une tension quasi permanente.",
+                theme: "Vengeance / survie",
+                pace: "Dense",
+                readingTime: "8 min / chapitre",
+                similar: "Vinland Saga, Claymore",
+                tags: ["Dark fantasy", "Seinen", "Combat", "Tragedie"],
+                bullets: [
+                    "Un heros marque par des epreuves extremes.",
+                    "Une oeuvre reconnue pour sa puissance visuelle.",
+                    "Un monde riche avec des arcs tres marquants."
+                ],
+                features: {
+                    power: "Chaque affrontement fait avancer Guts autant physiquement que mentalement.",
+                    cast: "Les liens, les trahisons et les antagonistes donnent un vrai poids a l'histoire.",
+                    experience: "La mise en scene et l'evolution du monde gardent la lecture captivante."
+                }
+            },
+            "ONE PIECE": {
+                year: "1997",
+                chapters: "1100+",
+                audience: "13+",
+                status: "Phenomenal",
+                universe: "Un monde maritime gigantesque rempli d'iles uniques, de mysteres et de factions.",
+                vibe: "Aventure, humour, emotion et grandes revelations.",
+                theme: "Liberte / aventure",
+                pace: "Progressif",
+                readingTime: "6 min / chapitre",
+                similar: "Fairy Tail, Hunter x Hunter",
+                tags: ["Pirates", "Shonen", "Aventure", "Monde ouvert"],
+                bullets: [
+                    "Une galerie de personnages immense et memorable.",
+                    "Des arcs majeurs avec une vraie montee dramatique.",
+                    "Un sens du voyage et de la decouverte tres fort."
+                ],
+                features: {
+                    power: "Chaque membre de l'equipage evolue avec un vrai sentiment de progression.",
+                    cast: "Les interactions de l'equipage rendent l'univers vivant et attachant.",
+                    experience: "Le monde donne toujours envie de voir l'ile suivante."
+                }
+            },
+            "JUJUSTU KAISEN": {
+                year: "2018",
+                chapters: "250+",
+                audience: "16+",
+                status: "Tendance",
+                universe: "Un monde moderne envahi par les fleaux et l'energie occulte.",
+                vibe: "Nerveux, sombre et spectaculaire.",
+                theme: "Exorcisme / sacrifice",
+                pace: "Rapide",
+                readingTime: "5 min / chapitre",
+                similar: "Chainsaw Man, Bleach",
+                tags: ["Occulte", "Action", "Shonen", "Surnaturel"],
+                bullets: [
+                    "Des combats techniques et tres lisibles.",
+                    "Des pouvoirs memorables et originaux.",
+                    "Une ambiance moderne qui fonctionne tout de suite."
+                ],
+                features: {
+                    power: "Les affrontements reposent autant sur la strategie que sur la force brute.",
+                    cast: "Le trio principal et les mentors creent une vraie dynamique de groupe.",
+                    experience: "La mise en danger permanente garde la tension tres haute."
+                }
+            }
+        };
+
+        const fallbackProfile = {
+            year: "2024",
+            chapters: "120+",
+            audience: "16+",
+            status: "En cours",
+            universe: "Un univers riche en affrontements, depassement de soi et moments memorables.",
+            vibe: "Accessible, rythme et visuel impactant pour enchainer les chapitres facilement.",
+            theme: "Action / progression",
+            pace: "Dynamique",
+            readingTime: "5 min / chapitre",
+            similar: "Les series populaires du moment",
+            tags: ["Action", "Manga", "Decouverte"],
+            bullets: [
+                "Une entree en matiere rapide et efficace.",
+                "Des enjeux clairs et une bonne progression.",
+                "Un bon choix pour prolonger votre session lecture."
+            ],
+            features: {
+                power: "La progression du heros reste lisible et satisfaisante.",
+                cast: "Le casting secondaire aide a enrichir les arcs et les rebondissements.",
+                experience: "Le rythme general permet de rester plonge dans l'action."
+            }
+        };
+
+        const profile = mangaProfiles[title] || fallbackProfile;
+
         if (title) {
             document.getElementById('manga-title').innerText = title;
             document.title = title + " - ScanOtaku";
@@ -121,6 +329,36 @@
         if (rating) {
             document.getElementById('manga-rating').innerText = rating;
         }
+
+        document.getElementById('manga-status').innerText = profile.status;
+        document.getElementById('manga-year').innerText = profile.year;
+        document.getElementById('manga-chapters').innerText = profile.chapters;
+        document.getElementById('manga-audience').innerText = profile.audience;
+        document.getElementById('manga-universe').innerText = profile.universe;
+        document.getElementById('manga-vibe').innerText = profile.vibe;
+        document.getElementById('manga-theme').innerText = profile.theme;
+        document.getElementById('manga-pace').innerText = profile.pace;
+        document.getElementById('manga-reading-time').innerText = profile.readingTime;
+        document.getElementById('manga-similar').innerText = profile.similar;
+        document.getElementById('feature-power').innerText = profile.features.power;
+        document.getElementById('feature-cast').innerText = profile.features.cast;
+        document.getElementById('feature-experience').innerText = profile.features.experience;
+
+        const tagsContainer = document.getElementById('manga-tags');
+        profile.tags.forEach((tag) => {
+            const item = document.createElement('span');
+            item.className = 'tag-pill';
+            item.innerText = tag;
+            tagsContainer.appendChild(item);
+        });
+
+        const bulletsContainer = document.getElementById('manga-bullets');
+        bulletsContainer.innerHTML = '';
+        profile.bullets.forEach((bullet) => {
+            const item = document.createElement('li');
+            item.innerText = bullet;
+            bulletsContainer.appendChild(item);
+        });
     </script>
 </body>
 </html>

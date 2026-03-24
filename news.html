@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,800&family=Poppins:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Actualite - ScanOtaku</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">
+                <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="ScanOtaku"></div>
+                <div class="brand-copy">
+                    <strong>ScanOtaku</strong>
+                    <span>Lecture manga premium</span>
+                </div>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class='bx bx-menu'></i></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a></li>
+                </ul>
+            </div>
+            <a href="index.html#news-section" class="nav-cta">Voir les news</a>
+        </nav>
+    </header>
+
+    <main class="news-page">
+        <section class="news-hero">
+            <div class="container news-hero-grid">
+                <div class="news-hero-copy">
+                    <span class="panel-badge" id="news-category">Actualite manga</span>
+                    <h1 id="news-title">Chargement de l'article...</h1>
+                    <div class="news-meta-line">
+                        <span><i class='bx bx-calendar'></i> <span id="news-date">15 Mars 2026</span></span>
+                        <span><i class='bx bx-time'></i> <span id="news-readtime">4 min</span></span>
+                        <span><i class='bx bx-user'></i> Redaction ScanOtaku</span>
+                    </div>
+                    <p id="news-intro">Retrouvez l'essentiel de l'actualite manga avec un resume clair et rapide a lire.</p>
+                </div>
+                <div class="news-hero-image-wrap">
+                    <img id="news-image" src="news/00.jpg" alt="Illustration de l'actualite">
+                </div>
+            </div>
+        </section>
+
+        <section class="news-article-section">
+            <div class="container news-layout">
+                <article class="news-article">
+                    <div class="detail-kicker">
+                        <span id="news-tag">Spoilers</span>
+                        <span><i class='bx bx-trending-up'></i> Sujet tendance</span>
+                    </div>
+                    <div class="news-body" id="news-body"></div>
+                </article>
+
+                <aside class="news-sidebar">
+                    <div class="detail-panel compact">
+                        <div class="panel-heading">
+                            <span class="panel-badge">Resume rapide</span>
+                            <h2>A retenir</h2>
+                        </div>
+                        <ul class="detail-bullets" id="news-points"></ul>
+                    </div>
+
+                    <div class="detail-panel compact">
+                        <div class="panel-heading">
+                            <span class="panel-badge">Continuer</span>
+                            <h2>Navigation</h2>
+                        </div>
+                        <div class="quick-facts">
+                            <div><span>Retour accueil</span><strong><a href="index.html#news-section">Voir toutes les news</a></strong></div>
+                            <div><span>Explorer</span><strong><a href="categorie.html">Parcourir les categories</a></strong></div>
+                            <div><span>Lecture</span><strong><a href="detail.html">Voir une page detail manga</a></strong></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="Logo">
+                <p>ScanOtaku vous aide a decouvrir, suivre et lire vos mangas preferes avec une interface plus claire et plus immersive.</p>
+                <div class="footer-pills">
+                    <span>News</span>
+                    <span>Sorties</span>
+                    <span>Spoilers</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a></li>
+                    <li><a href="detail.html">Page detail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Decouvrir</h3>
+                <ul>
+                    <li><a href="index.html#news-section">Dernieres news</a></li>
+                    <li><a href="categorie.html#action">Top action</a></li>
+                    <li><a href="categorie.html#aventure">Grandes aventures</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Communaute</h3>
+                <p>Restez connecte pour les sorties, les recommandations et les series qui montent.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-discord'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; <span>ScanOtaku</span> Tous droits reserves</div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+
+        const articles = {
+            "one-piece-1095": {
+                title: "ONE PIECE Chapitre 1095 Spoilers",
+                date: "15 Mars 2026",
+                readTime: "4 min",
+                category: "Spoilers",
+                tag: "Egghead",
+                image: "news/00.jpg",
+                intro: "Les premiers spoilers du chapitre 1095 de One Piece relancent encore la tension sur Egghead avec de nouveaux indices sur les affrontements a venir.",
+                points: [
+                    "Luffy et son equipage restent au coeur du chaos sur Egghead.",
+                    "Le chapitre tease de nouvelles revelations autour du contexte politique.",
+                    "La hype monte avant la sortie complete des scans."
+                ],
+                body: [
+                    "Les premiers spoilers du chapitre 1095 de One Piece ont immediatement attire l'attention des lecteurs. La situation sur Egghead devient encore plus instable, avec plusieurs camps qui avancent en meme temps et une tension qui grimpe autour de Luffy et de ses allies.",
+                    "Ce qui marque surtout dans ces premieres informations, c'est la facon dont Eiichiro Oda continue de melanger revelation, pression militaire et mouvement des personnages majeurs. Le chapitre semble vouloir accelerer avant une nouvelle grande sequence d'affrontement.",
+                    "Du cote des fans, les discussions tournent autour de ce que ces spoilers annoncent pour la suite de l'arc. Entre les theories sur les prochaines confrontations et les attentes sur les revelations lies au siecle oublie, le chapitre nourrit deja beaucoup de speculation.",
+                    "En attendant la sortie complete, ces spoilers suffisent a maintenir l'attention et a rappeler pourquoi Egghead reste l'un des arcs les plus commentes du moment."
+                ]
+            },
+            "gojo-sukuna": {
+                title: "Gojo Satoru est mort",
+                date: "15 Mars 2026",
+                readTime: "5 min",
+                category: "Jujutsu Kaisen",
+                tag: "Debat fans",
+                image: "news/people-who-think-gojo-vs-sukuna-is-not-the-best-fight-in-v0-w9rif0m2hofb1.webp",
+                intro: "Le duel entre Gojo et Sukuna continue d'alimenter les reactions des fans, avec un chapitre qui a laisse une empreinte enorme dans la communaute.",
+                points: [
+                    "Le chapitre 236 reste l'un des tournants les plus discutes du manga.",
+                    "Les lecteurs debattent encore de la mise en scene et des consequences.",
+                    "Le personnage de Gojo conserve une presence enorme dans la communaute."
+                ],
+                body: [
+                    "La mort de Gojo Satoru a provoque une onde de choc enorme chez les lecteurs de Jujutsu Kaisen. Le chapitre 236 a change la perception du combat contre Sukuna et a cree une rupture tres forte dans l'histoire recente du manga.",
+                    "Au-dela du simple resultat du duel, ce sont surtout la mise en scene, le contraste entre la confiance precedente et la brutalite du retournement qui ont marque les esprits. Beaucoup de lecteurs ont vu ce moment comme un point de bascule pour toute la serie.",
+                    "Depuis, la communaute continue de debattre sur la maniere dont ce passage a ete amene, sur le niveau reel des combattants et sur ce que cela veut dire pour les prochains arcs. Cette actualite reste donc tres vivante meme apres la sortie du chapitre.",
+                    "Qu'on soit d'accord ou non avec ce choix narratif, une chose reste claire : Gojo demeure l'un des personnages les plus marquants de sa generation, et son affrontement contre Sukuna reste un sujet central chez les fans."
+                ]
+            },
+            "boruto-blue-vortex": {
+                title: "Boruto Blue Vortex",
+                date: "15 Mars 2026",
+                readTime: "4 min",
+                category: "Nouvelle generation",
+                tag: "Blue Vortex",
+                image: "news/boruto-6.webp",
+                intro: "Boruto Blue Vortex continue de faire parler avec une ambiance plus mature, des enjeux plus lourds et une reception tres solide chez les lecteurs.",
+                points: [
+                    "Le ton de Blue Vortex est plus sombre et plus direct.",
+                    "Boruto gagne en stature dans sa nouvelle phase.",
+                    "La serie relance l'interet autour de sa nouvelle generation."
+                ],
+                body: [
+                    "Avec Blue Vortex, Boruto est entre dans une nouvelle phase bien plus mature. Le changement de ton saute rapidement aux yeux : les enjeux sont plus lourds, le heros parait plus affirme et le rythme donne une impression d'urgence beaucoup plus forte.",
+                    "Les lecteurs apprecient notamment la nouvelle image de Boruto, plus froide, plus precise et plus marquee par les evenements precedents. Cette evolution aide la serie a se distinguer plus clairement de ses debuts.",
+                    "Autour de lui, les autres personnages gagnent eux aussi en importance, ce qui renforce l'impression d'un monde qui avance vraiment. La reception des derniers chapitres montre que Blue Vortex a reussi a relancer l'interet d'une partie importante du public.",
+                    "Si cette dynamique continue, la serie pourrait s'installer durablement comme une etape forte de la nouvelle generation shonen."
+                ]
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('article') || 'one-piece-1095';
+        const article = articles[slug] || articles['one-piece-1095'];
+
+        document.title = article.title + " - ScanOtaku";
+        document.getElementById('news-title').innerText = article.title;
+        document.getElementById('news-date').innerText = article.date;
+        document.getElementById('news-readtime').innerText = article.readTime;
+        document.getElementById('news-category').innerText = article.category;
+        document.getElementById('news-tag').innerText = article.tag;
+        document.getElementById('news-intro').innerText = article.intro;
+        document.getElementById('news-image').src = article.image;
+        document.getElementById('news-image').alt = article.title;
+
+        const bodyContainer = document.getElementById('news-body');
+        article.body.forEach((paragraph) => {
+            const p = document.createElement('p');
+            p.innerText = paragraph;
+            bodyContainer.appendChild(p);
+        });
+
+        const pointsContainer = document.getElementById('news-points');
+        article.points.forEach((point) => {
+            const li = document.createElement('li');
+            li.innerText = point;
+            pointsContainer.appendChild(li);
+        });
+    </script>
+</body>
+</html>

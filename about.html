@@ -9,56 +9,62 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>À propos de nous - ScanOtaku</title>
+    <title>A propos de nous - ScanOtaku</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <a href="index.html" class="brand">
+                <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="ScanOtaku"></div>
+                <div class="brand-copy">
+                    <strong>ScanOtaku</strong>
+                    <span>Lecture manga premium</span>
+                </div>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class='bx bx-menu'></i></div>
             <div class="navbar">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html" class="active">À propos</a></li>
-                    <li><a href="categorie.html">Catégories</a>
+                    <li><a href="about.html" class="active">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a>
                         <ul class="dropdown">
-                            <li><a href="categorie.html">Action</a></li>
-                            <li><a href="categorie.html">Sport</a></li>
-                            <li><a href="categorie.html">Aventure</a></li>
+                            <li><a href="categorie.html#action">Action</a></li>
+                            <li><a href="categorie.html#sport">Sport</a></li>
+                            <li><a href="categorie.html#aventure">Aventure</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <div class="logo" id="logo2"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
+            <a href="categorie.html" class="nav-cta">Explorer</a>
         </nav>
     </header>
 
     <section class="about-section">
         <div class="container">
-            <h1>À propos de <span>ScanOtaku</span></h1>
-            <p>Bienvenue sur ScanOtaku, votre destination ultime pour lire vos mangas préférés en ligne. Nous sommes des fans passionnés dédiés à fournir la meilleure expérience de lecture pour la communauté otaku.</p>
-            
+            <h1>A propos de <span>ScanOtaku</span></h1>
+            <p>Bienvenue sur ScanOtaku, votre destination pour lire vos mangas preferes en ligne. Notre objectif est de proposer une experience plus moderne, plus rapide et plus inspirante pour tous les fans d'action, d'aventure et de grands univers.</p>
+
             <div class="about-grid">
                 <div class="about-card">
                     <i class='bx bxs-book-open'></i>
-                    <h3>Grande Bibliothèque</h3>
-                    <p>Accédez à des milliers de chapitres, des séries les plus populaires aux pépites cachées.</p>
+                    <h3>Grande bibliotheque</h3>
+                    <p>Retrouvez des titres cultes, des series en tendance et des recommandations a parcourir sans effort.</p>
                 </div>
                 <div class="about-card">
                     <i class='bx bxs-zap'></i>
-                    <h3>Mises à jour rapides</h3>
-                    <p>Nous vous apportons les derniers chapitres dès qu'ils sont traduits et publiés.</p>
+                    <h3>Mises a jour rapides</h3>
+                    <p>Suivez les sorties, les nouveaux chapitres et les mangas qui prennent de l'ampleur.</p>
                 </div>
                 <div class="about-card">
                     <i class='bx bxs-devices'></i>
-                    <h3>Adaptatif</h3>
-                    <p>Lisez sur votre téléphone, tablette ou ordinateur avec une interface parfaitement optimisée.</p>
+                    <h3>Lecture adaptative</h3>
+                    <p>Profitez d'une interface claire sur mobile, tablette et ordinateur avec une navigation plus fluide.</p>
                 </div>
             </div>
 
             <div class="mission">
-                <h2>Notre Mission</h2>
-                <p>Notre mission est de combler le fossé entre les créateurs et les fans en fournissant une plateforme où les histoires prennent vie. Nous pensons que tout le monde devrait avoir accès au monde merveilleux du manga, peu importe où il se trouve.</p>
+                <h2>Notre mission</h2>
+                <p>Nous voulons donner envie de rester plus longtemps sur le site, de decouvrir de nouvelles series et de revenir facilement a ses lectures preferees. ScanOtaku avance avec une idee simple : rendre l'univers manga plus beau a explorer et plus agreable a lire.</p>
             </div>
         </div>
     </section>
@@ -67,18 +73,33 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="Logo">
-                <p>ScanOtaku - Votre source de mangas en français. Lisez les derniers chapitres de vos séries préférées en haute qualité.</p>
+                <p>ScanOtaku vous aide a decouvrir, suivre et lire vos mangas preferes avec une interface plus claire et plus immersive.</p>
+                <div class="footer-pills">
+                    <span>Action</span>
+                    <span>Fantasy</span>
+                    <span>Shonen</span>
+                </div>
             </div>
             <div class="footer-links">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="categorie.html">Catégories</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a></li>
+                    <li><a href="detail.html">Page detail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Decouvrir</h3>
+                <ul>
+                    <li><a href="categorie.html#action">Top action</a></li>
+                    <li><a href="categorie.html#sport">Univers sport</a></li>
+                    <li><a href="categorie.html#aventure">Grandes aventures</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <h3>Suivez-nous</h3>
+                <h3>Communaute</h3>
+                <p>Restez connecte pour les sorties, les recommandations et les series qui montent.</p>
                 <div class="social-icons">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -87,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"> © <span>OTAKU</span> Tous droits réservés</div>
+        <div class="copyright">&copy; <span>ScanOtaku</span> Tous droits reserves</div>
     </footer>
 
     <script>

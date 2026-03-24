@@ -15,33 +15,40 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <a href="index.html" class="brand">
+                <div class="logo"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="ScanOtaku"></div>
+                <div class="brand-copy">
+                    <strong>ScanOtaku</strong>
+                    <span>Lecture manga premium</span>
+                </div>
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class='bx bx-menu'></i></div>
             <div class="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="categorie.html">Catégories</a>
-                    <ul class="dropdown">
-                        <li><a href="categorie.html">Action</a></li>
-                        <li><a href="categorie.html">Sport</a></li>
-                        <li><a href="categorie.html">Aventure</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a>
+                        <ul class="dropdown">
+                            <li><a href="categorie.html#action">Action</a></li>
+                            <li><a href="categorie.html#sport">Sport</a></li>
+                            <li><a href="categorie.html#aventure">Aventure</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="logo" id="logo2"><img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png"></div>
+            <a href="categorie.html" class="nav-cta">Explorer</a>
         </nav>
-            
     </header>
+
     <section class="home" id="home">
         <div class="home-text">
             <h2>Lire</h2>
-            <h1>Vos mangas préférés sur <span>OTAKU</span></h1>
-            <h3>vous serez satisfait</h3>
-            <a href="categorie.html" class="btn">Lire MAINTENANT</a>
+            <h1>Vos mangas preferes sur <span>OTAKU</span></h1>
+            <h3>Une experience plus moderne, plus riche et plus immersive</h3>
+            <a href="categorie.html" class="btn">Lire maintenant</a>
         </div>
     </section>
+
     <div class="text-top"><h2>Top Mangas</h2></div>
     <section class="top-manga">
         <div class="container swiper">
@@ -61,9 +68,9 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=SOLO%20LEVELING&img=images/top%20manga/1d69d7ca-be47-4952-9519-aa57a34610a7.jpeg&author=Chugong&cat=Action,%20Fantasy&rating=4.9&desc=Le%20plus%20faible%20chasseur%20de%20l'humanit%C3%A9%20d%C3%A9couvre%20un%20syst%C3%A8me%20myst%C3%A9rieux%20qui%20lui%20permet%20de%20monter%20en%20niveau%20sans%20limite.">
+                  <a href="detail.html?title=SOLO%20LEVELING&img=images/top%20manga/fac13c29-80b3-4541-87a2-ecd03db05f73.jpeg&author=Chugong&cat=Action,%20Fantasy&rating=4.9&desc=Le%20plus%20faible%20chasseur%20de%20l'humanite%20decouvre%20un%20systeme%20mysterieux%20qui%20lui%20permet%20de%20monter%20en%20niveau%20sans%20limite.">
                     <div class="image-box">
-                      <img src="images/top manga/1d69d7ca-be47-4952-9519-aa57a34610a7.jpeg" alt="Solo Leveling" />
+                      <img src="images/top manga/fac13c29-80b3-4541-87a2-ecd03db05f73.jpeg" alt="Solo Leveling" />
                     </div>
                     <div class="profile-details">
                       <div class="name-job">
@@ -74,7 +81,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=JUJUSTU%20KAISEN&img=images/top%20manga/aadf179d-0feb-40df-bc74-44448f81b225.jpeg&author=Gege%20Akutami&cat=Action,%20Surnaturel&rating=4.8&desc=Un%20lyc%C3%A9en%20avale%20un%20doigt%20maudit%20et%20devient%20l'h%C3%B4te%20d'un%20fl%C3%A9au%20puissant.">
+                  <a href="detail.html?title=JUJUSTU%20KAISEN&img=images/top%20manga/aadf179d-0feb-40df-bc74-44448f81b225.jpeg&author=Gege%20Akutami&cat=Action,%20Surnaturel&rating=4.8&desc=Un%20lyceen%20avale%20un%20doigt%20maudit%20et%20devient%20l'hote%20d'un%20fleau%20puissant.">
                     <div class="image-box">
                       <img src="images/top manga/aadf179d-0feb-40df-bc74-44448f81b225.jpeg" alt="Jujutsu Kaisen" />
                     </div>
@@ -87,9 +94,9 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=BLACK%20CLOVER&img=images/top%20manga/d0fe8933-7649-43c3-8fd4-98ae86df2e2d.jpeg&author=Y%C5%ABki%20Tabata&cat=Action,%20Magie&rating=4.7&desc=Asta,%20un%20jeune%20sans%20magie%20dans%20un%20monde%20o%C3%B9%20elle%20est%20tout,%20r%C3%AAve%20de%20devenir%20l'Empereur-Mage.">
+                  <a href="detail.html?title=BLACK%20CLOVER&img=images/you%20like%20this%20also/Black%20Clover%20Magic%20Poster%2061x91_5cm.jpeg&author=Yuki%20Tabata&cat=Action,%20Magie&rating=4.7&desc=Asta,%20un%20jeune%20sans%20magie%20dans%20un%20monde%20ou%20elle%20est%20tout,%20reve%20de%20devenir%20l'Empereur-Mage.">
                     <div class="image-box">
-                      <img src="images/top manga/d0fe8933-7649-43c3-8fd4-98ae86df2e2d.jpeg" alt="Black Clover" />
+                      <img src="images/you like this also/Black Clover Magic Poster 61x91_5cm.jpeg" alt="Black Clover" />
                     </div>
                     <div class="profile-details">
                       <div class="name-job">
@@ -100,7 +107,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=ONE%20PIECE&img=images/top%20manga/5813e3e1-43fe-43a0-ada2-8563aa69df7c.jpeg&author=Eiichiro%20Oda&cat=Action,%20Aventure&rating=5.0&desc=Luffy%20et%20son%20%C3%A9quipage%20partent%20en%20qu%C3%AAte%20du%20tr%C3%A9sor%20ultime,%20le%20One%20Piece.">
+                  <a href="detail.html?title=ONE%20PIECE&img=images/top%20manga/5813e3e1-43fe-43a0-ada2-8563aa69df7c.jpeg&author=Eiichiro%20Oda&cat=Action,%20Aventure&rating=5.0&desc=Luffy%20et%20son%20equipage%20partent%20en%20quete%20du%20tresor%20ultime,%20le%20One%20Piece.">
                     <div class="image-box">
                       <img src="images/top manga/5813e3e1-43fe-43a0-ada2-8563aa69df7c.jpeg" alt="One Piece" />
                     </div>
@@ -113,7 +120,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=BLUE%20LOCK&img=images/top%20manga/Blue%20Lock%20-%20vol%206.jpeg&author=Muneyuki%20Kaneshiro&cat=Sport,%20Football&rating=4.8&desc=300%20attaquants%20lyc%C3%A9ens%20sont%20r%C3%A9unis%20dans%20un%20centre%20de%20formation%20pour%20cr%C3%A9er%20le%20meilleur%20buteur%20du%20monde.">
+                  <a href="detail.html?title=BLUE%20LOCK&img=images/top%20manga/Blue%20Lock%20-%20vol%206.jpeg&author=Muneyuki%20Kaneshiro&cat=Sport,%20Football&rating=4.8&desc=300%20attaquants%20lyceens%20sont%20reunis%20dans%20un%20centre%20de%20formation%20pour%20creer%20le%20meilleur%20buteur%20du%20monde.">
                     <div class="image-box">
                       <img src="images/top manga/Blue Lock - vol 6.jpeg" alt="Blue Lock" />
                     </div>
@@ -133,28 +140,28 @@
         </div>
     </section>
 
-    <div class="text-top"><h2>Vous aimerez aussi</h2></div> 
+    <div class="text-top"><h2>Vous aimerez aussi</h2></div>
     <section class="top-manga">
         <div class="container swiper">
             <div class="slide-container">
               <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=DEMON%20SLAYER&img=images/you%20like%20this%20also/Kyojuro%20Rengoku.jpeg&author=Koyoharu%20Gotouge&cat=Action,%20D%C3%A9mon&rating=4.8&desc=Tanjiro%20se%20bat%20pour%20transformer%20sa%20soeur%20en%20humaine%20et%20venger%20sa%20famille.">
+                  <a href="detail.html?title=DEMON%20SLAYER&img=images/you%20like%20this%20also/Kyojuro%20Rengoku.jpeg&author=Koyoharu%20Gotouge&cat=Action,%20Demon&rating=4.8&desc=Tanjiro%20se%20bat%20pour%20transformer%20sa%20soeur%20en%20humaine%20et%20venger%20sa%20famille.">
                     <div class="image-box">
                       <img src="images/you like this also/Kyojuro Rengoku.jpeg" alt="Demon Slayer" />
                     </div>
                     <div class="profile-details">
                       <div class="name-job">
                         <h3 class="name">DEMON SLAYER</h3>
-                        <h4 class="job">Action, Démon</h4>
+                        <h4 class="job">Action, Demon</h4>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=TOKYO%20REVENGERS&img=images/you%20like%20this%20also/047f075d-3843-4cb5-8854-3e9fc44c185a.jpeg&author=Ken%20Wakui&cat=Action,%20Drame&rating=4.6&desc=Takemichi%20remonte%20le%20temps%20pour%20sauver%20son%20amie%20d'enfance%20du%20clan%20Tokyo%20Manji.">
+                  <a href="detail.html?title=TOKYO%20REVENGERS&img=images/new%20arrivals/takemichi%20hanagaki.jpeg&author=Ken%20Wakui&cat=Action,%20Drame&rating=4.6&desc=Takemichi%20remonte%20le%20temps%20pour%20sauver%20son%20amie%20d'enfance%20du%20clan%20Tokyo%20Manji.">
                     <div class="image-box">
-                      <img src="images/you like this also/047f075d-3843-4cb5-8854-3e9fc44c185a.jpeg" alt="Tokyo Revengers" />
+                      <img src="images/new arrivals/takemichi hanagaki.jpeg" alt="Tokyo Revengers" />
                     </div>
                     <div class="profile-details">
                       <div class="name-job">
@@ -165,7 +172,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=CHAINSAW%20MAN&img=images/you%20like%20this%20also/6686ffc7-d9b0-4fa2-8cec-6d6727ea1a23.jpeg&author=Tatsuki%20Fujimoto&cat=Action,%20Gore&rating=4.7&desc=Denji%20fusionne%20avec%20son%20chien-d%C3%A9mon%20Pochita%20pour%20devenir%20un%20chasseur%20de%20d%C3%A9mons%20impitoyable.">
+                  <a href="detail.html?title=CHAINSAW%20MAN&img=images/you%20like%20this%20also/6686ffc7-d9b0-4fa2-8cec-6d6727ea1a23.jpeg&author=Tatsuki%20Fujimoto&cat=Action,%20Gore&rating=4.7&desc=Denji%20fusionne%20avec%20son%20chien-demon%20Pochita%20pour%20devenir%20un%20chasseur%20de%20demons%20impitoyable.">
                     <div class="image-box">
                       <img src="images/you like this also/6686ffc7-d9b0-4fa2-8cec-6d6727ea1a23.jpeg" alt="Chainsaw Man" />
                     </div>
@@ -178,7 +185,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=HAIKYU&img=images/you%20like%20this%20also/15c8d4d5-fabf-4b77-af4c-b58b8bef44dd.jpeg&author=Haruichi%20Furudate&cat=Sport,%20Volleyball&rating=4.9&desc=Une%20%C3%A9quipe%20de%20volleyball%20lyc%C3%A9enne%20visant%20le%20sommet%20malgr%C3%A9%20leur%20petite%20taille.">
+                  <a href="detail.html?title=HAIKYU&img=images/you%20like%20this%20also/15c8d4d5-fabf-4b77-af4c-b58b8bef44dd.jpeg&author=Haruichi%20Furudate&cat=Sport,%20Volleyball&rating=4.9&desc=Une%20equipe%20de%20volleyball%20lyceenne%20visant%20le%20sommet%20malgre%20leur%20petite%20taille.">
                     <div class="image-box">
                       <img src="images/you like this also/15c8d4d5-fabf-4b77-af4c-b58b8bef44dd.jpeg" alt="Haikyu" />
                     </div>
@@ -200,33 +207,32 @@
 
     <section class="annonce">
         <div class="text-annonce">
-             <p>Votre destination ultime pour, </p>
-            <p>L'AVENTURE, L'ACTION, et LE FRISSON !</p>
-            <p>Découvrez les dernières sorties et plongez dans l'univers du manga.</p>
+            <p>Votre destination ultime pour l'aventure, l'action et le frisson.</p>
+            <p>Decouvrez les dernieres sorties et plongez dans l'univers du manga.</p>
             <p class="btn"><a href="categorie.html">Voir la collection</a></p>
         </div>
     </section>
 
-    <div class="text-top"><h2>NOUVEAUX MANGAS</h2></div> 
+    <div class="text-top"><h2>Nouveaux Mangas</h2></div>
     <section class="top-manga">
         <div class="container swiper">
             <div class="slide-container">
               <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=SPY%20X%20FAMILY&img=images/new%20arrivals/Recommended%20Manga%20to%20Read_%20SPY%20x%20FAMILY%20manga.jpeg&author=Tatsuya%20Endo&cat=Com%C3%A9die,%20Espionnage&rating=4.8&desc=Un%20espion,%20une%20tueuse%20%C3%A0%20gages%20et%20une%20t%C3%A9l%C3%A9pathe%20forment%20une%20famille%20pour%20remplir%20une%20mission%20secr%C3%A8te.">
+                  <a href="detail.html?title=SPY%20X%20FAMILY&img=images/new%20arrivals/Recommended%20Manga%20to%20Read_%20SPY%20x%20FAMILY%20manga.jpeg&author=Tatsuya%20Endo&cat=Comedie,%20Espionnage&rating=4.8&desc=Un%20espion,%20une%20tueuse%20a%20gages%20et%20une%20telepathe%20forment%20une%20famille%20pour%20remplir%20une%20mission%20secrete.">
                     <div class="image-box">
                       <img src="images/new arrivals/Recommended Manga to Read_ SPY x FAMILY manga.jpeg" alt="Spy x Family" />
                     </div>
                     <div class="profile-details">
                       <div class="name-job">
                         <h3 class="name">SPY X FAMILY</h3>
-                        <h4 class="job">Comédie, Espionnage</h4>
+                        <h4 class="job">Comedie, Espionnage</h4>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=BORUTO&img=images/new%20arrivals/Boruto%20%26%20Kawaki%20[Clean_Transparent].jpeg&author=Masashi%20Kishimoto&cat=Action,%20Ninja&rating=4.5&desc=La%20nouvelle%20g%C3%A9n%C3%A9ration%20de%20ninjas%20affronte%20de%20nouvelles%20menaces%20technologiques%20et%20divines.">
+                  <a href="detail.html?title=BORUTO&img=images/new%20arrivals/Boruto%20%26%20Kawaki%20[Clean_Transparent].jpeg&author=Masashi%20Kishimoto&cat=Action,%20Ninja&rating=4.5&desc=La%20nouvelle%20generation%20de%20ninjas%20affronte%20de%20nouvelles%20menaces%20technologiques%20et%20divines.">
                     <div class="image-box">
                       <img src="images/new arrivals/Boruto & Kawaki [Clean_Transparent].jpeg" alt="Boruto" />
                     </div>
@@ -239,7 +245,7 @@
                   </a>
                 </div>
                 <div class="card swiper-slide">
-                  <a href="detail.html?title=ASHITO%20AOI&img=images/new%20arrivals/Ashito%20Aoi.jpeg&author=Y%C5%ABgo%20Kobayashi&cat=Sport,%20Football&rating=4.7&desc=Un%20jeune%20joueur%20de%20football%20talentueux%20mais%20brut%20int%C3%A8gre%20une%20acad%C3%A9mie%20de%20prestige.">
+                  <a href="detail.html?title=ASHITO%20AOI&img=images/new%20arrivals/Ashito%20Aoi.jpeg&author=Yugo%20Kobayashi&cat=Sport,%20Football&rating=4.7&desc=Un%20jeune%20joueur%20de%20football%20talentueux%20mais%20brut%20integre%20une%20academie%20de%20prestige.">
                     <div class="image-box">
                       <img src="images/new arrivals/Ashito Aoi.jpeg" alt="Ao Ashi" />
                     </div>
@@ -259,49 +265,64 @@
         </div>
     </section>
 
-    <div class="text-top"><h2>Actualités</h2></div>
+    <div class="text-top" id="news-section"><h2>Actualites</h2></div>
     <section class="blog-container">
       <div class="blog">
-          <div class="text-blog">
+          <article class="text-blog">
               <img src="news/00.jpg" alt="Image 1">
               <span>15 Mars 2026</span>
               <h2>ONE PIECE Chapitre 1095 Spoilers</h2>
               <p>Les spoilers sont sortis, Luffy et ses nakama sont sur Egghead...</p>
-              <a href="#">Lire la suite</a>
-          </div>
-          <div class="text-blog">
+              <a href="news.html?article=one-piece-1095">Lire la suite</a>
+          </article>
+          <article class="text-blog">
               <img src="news/people-who-think-gojo-vs-sukuna-is-not-the-best-fight-in-v0-w9rif0m2hofb1.webp" alt="Image 2">
               <span>15 Mars 2026</span>
               <h2>Gojo Satoru est mort</h2>
-              <p>Dans le chapitre 236 dans le VS Gojo-Sukuna...</p>
-              <a href="#">Lire la suite</a>
-          </div>
-          <div class="text-blog">
+              <p>Dans le chapitre 236, le duel Gojo contre Sukuna continue de faire parler...</p>
+              <a href="news.html?article=gojo-sukuna">Lire la suite</a>
+          </article>
+          <article class="text-blog">
               <img src="news/boruto-6.webp" alt="Image 3">
               <span>15 Mars 2026</span>
-              <h2>BORUTO Blue Vortex</h2>
-              <p>Le nouveau chapitre de BORUTO devenu maintenant BORUTO Blue Vortex fait sensation auprès des fans...</p>
-              <a href="#">Lire la suite</a>
-          </div>
+              <h2>Boruto Blue Vortex</h2>
+              <p>Le nouveau chapitre de BORUTO Blue Vortex fait sensation aupres des fans...</p>
+              <a href="news.html?article=boruto-blue-vortex">Lire la suite</a>
+          </article>
       </div>
-  </section>
-  
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="image/img/png-transparent-otaku-otaku-logo-anime-beach-vapor-lg-text-manga-cartoon-removebg-preview.png" alt="Logo">
-                <p>ScanOtaku - Votre source de mangas en français. Lisez les derniers chapitres de vos séries préférées en haute qualité.</p>
+                <p>ScanOtaku vous aide a decouvrir, suivre et lire vos mangas preferes avec une interface plus claire et plus immersive.</p>
+                <div class="footer-pills">
+                    <span>Action</span>
+                    <span>Fantasy</span>
+                    <span>Shonen</span>
+                </div>
             </div>
             <div class="footer-links">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="categorie.html">Catégories</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="categorie.html">Categories</a></li>
+                    <li><a href="detail.html">Page detail</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Decouvrir</h3>
+                <ul>
+                    <li><a href="categorie.html#action">Top action</a></li>
+                    <li><a href="categorie.html#sport">Univers sport</a></li>
+                    <li><a href="categorie.html#aventure">Grandes aventures</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <h3>Suivez-nous</h3>
+                <h3>Communaute</h3>
+                <p>Restez connecte pour les sorties, les recommandations et les series qui montent.</p>
                 <div class="social-icons">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -310,10 +331,9 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"> © <span>OTAKU</span> Tous droits réservés</div>
+        <div class="copyright">&copy; <span>ScanOtaku</span> Tous droits reserves</div>
     </footer>
-    
-  
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
@@ -321,6 +341,6 @@
           var navbar = document.querySelector('.navbar');
           navbar.classList.toggle('active');
       }
-  </script>
+    </script>
 </body>
 </html>
