@@ -1115,12 +1115,15 @@ nav {
         height: 200px;
     }
 
-    .footer-content {
-        text-align: center;
+    .footer-content,
+    .footer-logo,
+    .footer-links,
+    .footer-social {
+        text-align: left;
     }
 
     .footer-pills,
     .social-icons {
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
